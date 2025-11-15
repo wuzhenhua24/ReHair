@@ -35,8 +35,8 @@ struct MyHairstylesView: View {
             .navigationTitle("我的发型")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
-                if !appState.savedHairstyles.isEmpty {
-                    ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    if !appState.savedHairstyles.isEmpty {
                         Button(action: {
                             showClearAlert = true
                         }) {

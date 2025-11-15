@@ -57,20 +57,26 @@ class HairstyleGenerationViewModel: ObservableObject {
             HairstyleResult(
                 originalImageURL: "original_image",
                 generatedImageURL: "generated_image_1",
-                style: .short,
-                tags: ["适合圆脸", "清爽"]
+                style: .hairTransplant,
+                tags: ["自然", "逼真", "推荐"]
             ),
             HairstyleResult(
                 originalImageURL: "original_image",
                 generatedImageURL: "generated_image_2",
-                style: .korean,
-                tags: ["韩系中分", "时尚"]
+                style: .hairlineAdjustment,
+                tags: ["优化脸型", "自然"]
             ),
             HairstyleResult(
                 originalImageURL: "original_image",
                 generatedImageURL: "generated_image_3",
-                style: .natural,
-                tags: ["自然发际线", "商务"]
+                style: .wigSimulation,
+                tags: ["舒适", "自然", "推荐"]
+            ),
+            HairstyleResult(
+                originalImageURL: "original_image",
+                generatedImageURL: "generated_image_4",
+                style: .hairDensity,
+                tags: ["浓密", "自然"]
             )
         ]
         generatedResults = mockResults

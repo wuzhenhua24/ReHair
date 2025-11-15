@@ -38,12 +38,10 @@ struct PhotoPreprocessView: View {
                 }
             }
             .fullScreenCover(isPresented: $showGenerationView) {
-                if let finalImage = croppedImage ?? UIImage() {
-                    HairstyleGenerationView(
-                        image: finalImage,
-                        isPresented: $showGenerationView
-                    )
-                }
+                HairstyleGenerationView(
+                    image: croppedImage ?? image,
+                    isPresented: $showGenerationView
+                )
             }
         }
     }
